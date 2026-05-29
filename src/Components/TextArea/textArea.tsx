@@ -108,14 +108,14 @@ export function TextArea() {
         )}
 
         {resultado && (
-        <div className="grid grid-cols-2 gap-7 mb-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-7 mb-6">
           {/* CÓDIGO */}
             <div className="flex flex-col bg-[#141414] border border-slate-500/45 mt-8 overflow-hidden rounded-xl">
             <div className="flex items-center justify-between p-2 border-b border-slate-500/45">
                 <span className="text-[0.80em] font-medium text-slate-500">💻 Código HTML</span>
                 <div className="flex gap-3">
-                <button onClick={copiarCodigo} className="text-xs text-slate-400 hover:text-white transition-colors">📋 Copiar</button>
-                <button onClick={baixarCodigo} className="text-xs text-slate-400 hover:text-white transition-colors">⬇️ Baixar</button>
+                <button onClick={copiarCodigo} className="text-xs text-slate-400 cursor-pointer hover:text-white transition-colors">📋 Copiar</button>
+                <button onClick={baixarCodigo} className="text-xs text-slate-400 cursor-pointer hover:text-white transition-colors">⬇️ Baixar</button>
                 </div>
             </div>
             <pre className="font-mono p-2 text-[0.75em] text-slate-500 leading-relaxed overflow-y-auto max-h-96 whitespace-pre-wrap break-all flex-1">
@@ -128,8 +128,8 @@ export function TextArea() {
             <div className="flex items-center justify-between p-2 border-b border-slate-500/45">
                 <span className="text-[0.80em] font-medium text-slate-500">👁️ Preview</span>
                 <div className="flex gap-3">
-                <button onClick={abrirFullscreen} className="text-xs text-slate-400 hover:text-white transition-colors">⛶ Fullscreen</button>
-                <button onClick={() => gerarPagina()} className="text-xs text-slate-400 hover:text-white transition-colors">🔄 Gerar novo</button>
+                <button onClick={abrirFullscreen} className="text-xs cursor-pointer text-slate-400 hover:text-white transition-colors">⛶ Fullscreen</button>
+                <button onClick={() => gerarPagina()} className="text-xs cursor-pointer text-slate-400 hover:text-white transition-colors">🔄 Gerar novo</button>
                 </div>
             </div>
             <iframe

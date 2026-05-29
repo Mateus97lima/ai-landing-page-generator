@@ -21,7 +21,7 @@ export async function POST(req: Request) {
         content: `Crie uma página com Tailwind sobre: ${texto}`,
         },
     ], 
-    "temperature": 0.9,
+    "temperature": 0.8,
     "max_tokens": 4000
 
     }),
